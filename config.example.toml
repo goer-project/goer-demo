@@ -1,0 +1,63 @@
+[app]
+name = "Goer"
+env = "local"
+debug = true
+port = 3000
+timezone = "UTC"
+
+[database]
+connection = "mysql"
+
+[database.mysql]
+host = "127.0.0.1"
+port = 3306
+database = "goer"
+username = "root"
+password = ""
+max_idle_connections = 10
+max_open_connection = 100
+
+[database.sqlite]
+database = "database/goer.db"
+
+[database.redis]
+host = "127.0.0.1"
+port = 6379
+password = ""
+database = 0
+database_cache = 1
+
+[mail]
+host = ""
+port = 465
+username = ""
+password = ""
+from_address = ""
+from_name = ""
+
+[aes]
+key = ""
+iv = ""
+
+[common]
+uid_length = 8
+default_password = ""
+
+[jwt]
+secret_key = ""
+ttl = 604800
+
+[swag]
+api_doc = true
+
+[open]
+enabled = true
+api_key = ""
+api_secret = ""
+ip = []
+ttl = 30
+
+[code]
+# ttl minutes
+length = 6
+ttl = 5

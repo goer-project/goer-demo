@@ -1,0 +1,19 @@
+# system file
+.DS_Store
+
+# editor
+.idea
+.vscode
+
+# air hot reload
+.air.toml
+
+# tmp
+tmp/
+cmd/debug.go
+
+# build
+goer
+
+# config file
+config.toml
