@@ -21,7 +21,7 @@ type CommonController struct {
 // @Accept       json
 // @Produce      json
 // @Success      200  {string}  string  "Ping"
-// @Router       /v1/common/ping [get]
+// @Router       /common/ping [get]
 func (common *CommonController) Ping(c *gin.Context) {
 	response.Msg(c, "pong")
 }

@@ -23,7 +23,7 @@ type FileController struct {
 // @Produce   json
 // @Param     image  formData  file    true  "image"
 // @Success   200    {string}  string  "OK"
-// @Router    /v1/common/upload [POST]
+// @Router    /common/upload [POST]
 func (*FileController) Upload(c *gin.Context) {
 	var request commonRequest.UploadRequest
 	if ok := form.Validate(c, &request); !ok {
