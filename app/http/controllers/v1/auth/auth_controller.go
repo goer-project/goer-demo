@@ -2,7 +2,7 @@ package auth
 
 import (
 	v1 "goer/app/http/controllers/v1"
-	authRequest "goer/app/http/requests/auth"
+	authRequest "goer/app/http/requests/v1/auth"
 	"goer/app/models/user"
 	"goer/global"
 	"goer/global/errno"

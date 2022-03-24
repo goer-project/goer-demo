@@ -5,7 +5,7 @@ import (
 	"time"
 
 	v1 "goer/app/http/controllers/v1"
-	authRequest "goer/app/http/requests/auth"
+	"goer/app/http/requests/v1/auth"
 	"goer/global"
 	"goer/global/errno"
 	"goer/pkg/mail"
