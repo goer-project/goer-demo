@@ -10,6 +10,7 @@ type App struct {
 	Debug    bool   `mapstructure:"debug" json:"debug"`
 	Port     uint   `mapstructure:"port" json:"port"`
 	Timezone string `mapstructure:"timezone" json:"timezone"`
+	ApiUrl   string `mapstructure:"api_url" json:"api_url"`
 }
 
 func (a App) SetTimezone() {

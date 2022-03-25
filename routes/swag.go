@@ -2,6 +2,7 @@ package routes
 
 import (
 	"goer/docs"
+	"goer/global"
 
 	"github.com/gin-gonic/gin"
 	"github.com/swaggo/files"
@@ -11,7 +12,6 @@ import (
 // MapSwagRoutes
 // @title                       API Docs
 // @version                     1.0
-// @host                        localhost:3000
 // @BasePath                    /
 // @securityDefinitions.apikey  Bearer
 // @in                          header
@@ -20,7 +20,7 @@ func MapSwagRoutes(r *gin.Engine) {
 	// swagger info
 	docs.SwaggerInfo.Title = "API Docs"
 	docs.SwaggerInfo.Version = "1.0"
-	// docs.SwaggerInfo.Host = "localhost:3000"
+	docs.SwaggerInfo.Host = global.Config.App.ApiUrl
 	// docs.SwaggerInfo.BasePath = "/"
 	// docs.SwaggerInfo.Schemes = []string{"http", "https"}
 

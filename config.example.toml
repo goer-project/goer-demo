@@ -4,6 +4,7 @@ env = "local"
 debug = true
 port = 3000
 timezone = "UTC"
+api_url = "http://localhost"
 
 [database]
 connection = "mysql"
