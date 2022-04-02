@@ -10,7 +10,11 @@ import (
 
 func Guard() gin.HandlerFunc {
 	return func(c *gin.Context) {
+		// Init user info to gin.context
+		c.Set("auth.user_id", 0)
+		c.Set("auth.user", user.User{})
 
+		// Parse token
 		claims, err := auth.NewJWT().ParseToken(c)
 		if err != nil {
 			return
